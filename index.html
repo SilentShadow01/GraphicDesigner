@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphic Design Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Limelight&family=Tinos&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -29,10 +31,20 @@
             border-radius: 50%;
             object-fit: cover;
             margin-right: 25px;
-            border: 5px solid #000;
+            border: 7px solid #4CAF50;
         }
         .profile-text {
             flex: 1;
+        }
+        h2.font-dm-serif {
+            margin-bottom: 0;
+        }
+        p.font-tino{
+            margin-top: 5px;
+        }
+        .profile-text h2 i {
+            color: #007BFF;
+            margin-left: 10px;
         }
         .font-limelight {
             font-family: 'Limelight', sans-serif;
@@ -48,6 +60,15 @@
             font-weight: 600;
             margin-top: 30px;
             text-align: center;
+        }
+        .section-title::before {
+            content: "";
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            height: 3px;
+            background-color: #bebdbd;
+            margin: 10px auto;
         }
         .grid-container {
             display: grid;
@@ -79,31 +100,57 @@
             width: 100%;
             background-color: #f8f8f8;
         }
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .icons img {
+            width: 60px;
+            height: 60px;
+        }
     </style>
 </head>
 <body>
     <div class="profile-container">
-        <img src="Assets/Img/2x2.png" alt="Your Profile" class="profile-img">
+        <img src="Assets/Img/profile.jpg" alt="Your Profile" class="profile-img">
         <div class="profile-text">
-            <h2 class="font-dm-serif">Mark Vincent De Jesus</h2>
+            <h2 class="font-dm-serif">Mark Vincent De Jesus<i class="fa-solid fa-circle-check"></i></h2>
             <p class="font-tino">
-                Welcome to my graphic design portfolio! I'm passionate about transforming ideas into visually compelling designs that communicate, inspire, and leave a lasting impact. From branding to digital artwork, every project I create is a blend of creativity, strategy, and attention to detail. Explore my works and let's bring your vision to life!
-                
+                "Where Arts and Innovation Collide"         
+                <br><i class="fa-solid fa-pencil"></i> Graphic Designer
+                <br><i class="fa-solid fa-phone"></i> 09663503608
+                <br><i class="fa-solid fa-envelope"></i> markvincentd625@gmail.com
             </p>
         </div>
     </div>
-    
+    <h2 class="font-tino">Created with:</h2>
+    <div class="icons">
+        
+        <img src="Assets/Img/photoshop_5968520.png" alt="Adobe Photoshop">
+        <img src="Assets/Img/illustrator_5968472.png" alt="Adobe Illustrator">
+    </div>
     <h2 class="section-title font-tino">Projects / My Works</h2>
     
     <div class="grid-container">
-        <div class="grid-item"><img src="Assets/Img/Jailbreak Circle.png" alt="Design 1"></div>
-        <div class="grid-item"><img src="Assets/Img/Jailbreak Circle.png" alt="Design 2"></div>
-        <div class="grid-item"><img src="Assets/Img/Jailbreak Circle.png" alt="Design 3"></div>
+        <div class="grid-item"><img src="Assets/Img/LOGO 4.png" alt="Design 1"></div>
+        <div class="grid-item"><img src="Assets/Img/sea break 2.png" alt="Design 2"></div>
+        <div class="grid-item"><img src="Assets/Img/Empress Siomai.png" alt="Design 3"></div>
+        <div class="grid-item"><img src="Assets/Img/CMS Logo Colored.png" alt="Design 1"></div>
+        <div class="grid-item"><img src="Assets/Img/Jailbreak Logo White BG.png" alt="Design 2"></div>
+        <div class="grid-item"><img src="Assets/Img/LOGO 3.png" alt="Design 3"></div>
+        <div class="grid-item"><img src="Assets/Img/Silent logo.png" alt="Design 1"></div>
+        <div class="grid-item"><img src="Assets/Img/LOGO.png" alt="Design 2"></div>
+        <div class="grid-item"><img src="Assets/Img/Beach Poster 1.png" alt="Design 3"></div>
+        <div class="grid-item"><img src="Assets/Img/Beach Poster 2.png" alt="Design 1"></div>
+        <div class="grid-item"><img src="Assets/Img/Sunflower Poster.png" alt="Design 2"></div>
+        <div class="grid-item"><img src="Assets/Img/Candle Poster.png" alt="Design 3"></div>
         <!-- Add more images as needed -->
     </div>
     
     <footer>
-        <p>&copy; 2025 Your Name | Graphic Design Portfolio</p>
+        <p>&copy; 2025 Mark Vincent De Jesus | Graphic Design Portfolio</p>
     </footer>
 </body>
 </html>
